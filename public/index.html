@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    <title>Web Scraper</title>
+    <style>
+       body {
+            background-color: white
+        }
+        #image-container {
+            background-size: cover;
+            position: relative;
+            height: 300px;
+            background-image: url("bgimage.jpg");
+        }
+        .text {
+          
+            color: white;
+            font-size: 8vw;
+            font-weight: bolder;
+            margin: 0 auto;
+            padding: 10px;
+            width: 50%;
+            text-align: left;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+        }
+
+        #container {
+            width: 960px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: black;
+            align-content: center;
+            padding-top: 5px;
+        }
+
+        h1 {
+            font-weight: bolder;
+            font-size: 3.5em;
+            padding-left: 21rem;
+            padding-bottom: 3rem;
+            padding-right: 17rem
+        }
+
+        
+        #articles {
+            display: inline-block;
+            overflow: auto;
+            width: 60%;
+            height: 700px;
+            padding-left: 3rem;
+        }
+
+        #notes {
+            float: right;
+            width: 30%;
+            padding-right: 1.5rem;
+            padding-left: 1.5rem;
+        }
+
+        h2 {
+            font-size: 2.5em
+        }
+
+
+        footer {
+            text-align: center;
+            padding-top: 2em;
+            padding-bottom: 1.5em
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper cyan darken-1">
+            <a href="index.html" class="brand-logo">WebScraper</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/scrape">View Articles</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="image-container">
+        <div class="text">WebScraper</div>
+    </div>
+    <br>
+    <div class="container">
+        <div id="articles">Articles</div>
+        <div id="notes">Where notes would go</div>
+    </div>
+    <br>
+    <footer class="page-footer cyan darken-1">
+        <div class="footer-container">
+            Web Scraper
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
